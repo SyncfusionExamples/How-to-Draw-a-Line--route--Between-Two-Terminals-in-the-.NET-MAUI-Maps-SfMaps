@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:map="clr-namespace:Syncfusion.Maui.Maps;assembly=Syncfusion.Maui.Maps"
+             x:Class="LineBetweenTerminals.MainPage">
+
+    <map:SfMaps>
+        <map:SfMaps.Layer>
+            <map:MapShapeLayer ShapesSource="https://cdn.syncfusion.com/maps/map-data/world-map.json">
+                <map:MapShapeLayer.Sublayers>
+                    <map:MapLineLayer>
+                        <map:MapLineLayer.Lines>
+                            <map:MapLine>
+                                <map:MapLine.From>
+                                    <map:MapLatLng Latitude="28.7041"
+                                                   Longitude="77.1025" />
+                                </map:MapLine.From>
+                                <map:MapLine.To>
+                                    <map:MapLatLng Latitude="-34.603722"
+                                                   Longitude="-58.381592" />
+                                </map:MapLine.To>
+                            </map:MapLine>
+                        </map:MapLineLayer.Lines>
+                    </map:MapLineLayer>
+                </map:MapShapeLayer.Sublayers>
+            </map:MapShapeLayer>
+        </map:SfMaps.Layer>
+    </map:SfMaps>
+</ContentPage>
